@@ -1,0 +1,12 @@
+.dropdowns{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dropdown-menu{
+    background-color: lightslategrey;
+
+}
+

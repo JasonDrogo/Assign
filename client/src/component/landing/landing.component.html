@@ -1,0 +1,26 @@
+
+<div class="row" >
+<div style="margin-top: 10px" class="col-md-12 col-lg-6 contain">
+<div  class="dropdowns">
+        <div  ngbDropdown >
+        <button class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle><strong>States</strong></button>
+        <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="dropdownBasic2">
+          <button (click)=setCityData(states.state) ngbDropdownItem *ngFor="let states of stateCityData">{{states.state}}</button>
+        </div>
+      </div>
+      <div  ngbDropdown >
+        <button class="btn btn-outline-dark" id="dropdownBasic2" ngbDropdownToggle><strong>Districts</strong></button>
+        <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="dropdownBasic2">
+          <button (click)="getLatLng(city)"  ngbDropdownItem *ngFor="let city of cities">{{city}}</button>
+        </div>
+      </div>
+</div>
+
+</div>
+<div class="col-md-12 col-lg-6">
+<app-map #mapComponent></app-map>
+
+
+
+</div>
+</div>
