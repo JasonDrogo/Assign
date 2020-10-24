@@ -9,4 +9,4 @@
 ## Running client npm start
 
 
-![Optional Text](../dev/Assign/applicationHome.JPG)
+![Optional Text](..dev/server/Screenshot (29).png)
